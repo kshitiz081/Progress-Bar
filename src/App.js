@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import ProgressBar from './ProgressBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProgressBar progress={90}  bgColor="violet"/>
+      <ProgressBar progress={50}  bgColor="yellow"/>
+      <ProgressBar progress={60}  bgColor="purple"/>
+      <ProgressBar progress={40}  bgColor="red"/>
+      <ProgressBar progress={70}  bgColor="blue"/>
     </div>
   );
 }
